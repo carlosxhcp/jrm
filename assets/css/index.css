@@ -1,5 +1,6 @@
 /* FONTES */
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,900;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
 
 nav {
   background-color: black;
@@ -14,16 +15,17 @@ body {
 }
 
 .index-t1 {
+  margin-top: 25px;
   font-family: "Roboto";
-  font-size: 2.0em;
+  font-size: 1.1em;
 }
 
 .index-t2 {
-    font-family: 'Roboto';
-    font-size: 1.3em;
-    color: rgb(216, 216, 0);
-  }
-  
+  font-family: "Roboto";
+  font-size: 1.0em;
+  color: rgb(216, 216, 0);
+}
+
 .navbar-brand img {
   width: 50px;
 }
@@ -40,6 +42,29 @@ body {
 .navbar .nav-link:hover {
   color: white !important;
 }
+
+.btn-saiba {
+  background-color: #ffd500;
+  border-radius: 5px;
+  display: inline-block;
+  cursor: pointer;
+  color: #000000;
+  font-family: "Rubik";
+  font-size: .9em;
+  padding: 8px 30px;
+  margin-top: 50px;
+  text-decoration: none;
+  transition: transform 0.3s ease;
+}
+.btn-saiba:hover {
+  background-color: #ffd500;
+  color: #fff;
+  transform: scale(1.03);
+}
+.btn-saiba:active {
+  position: relative;
+  top: 1px;
+}
 @media screen and (min-width: 768px) {
   body {
     background-image: url(/assets/img/index/background-pc.png);
@@ -55,9 +80,9 @@ body {
   }
 
   .index-t2 {
-    font-family: 'Roboto';
+    font-family: "Roboto";
     font-size: 2em;
-    color: rgb(216, 216, 0);
+    color: rgb(255, 230, 0);
   }
 
   .navbar-brand img {
@@ -69,28 +94,24 @@ body {
   }
 
   .btn-saiba {
-	background-color:#ffd500;
-	border-radius:5px;
-	display:inline-block;
-	cursor:pointer;
-	color:#000000;
-	font-family:'Arial';
-	font-size:27px;
-	padding:13px 73px;
-	text-decoration:none;
-  
+    background-color: #ffd500;
+    border-radius: 5px;
+    display: inline-block;
+    cursor: pointer;
+    color: #000000;
+    font-family: "Rubik";
+    font-size: 1.3em;
+    padding: 13px 73px;
+    text-decoration: none;
+    transition: transform 0.3s ease;
+  }
+  .btn-saiba:hover {
+    background-color: #ffd500;
+    color: #fff;
+    transform: scale(1.03);
+  }
+  .btn-saiba:active {
+    position: relative;
+    top: 1px;
+  }
 }
-.btn-saiba:hover {
-	background-color:#fff424;
-}
-.btn-saiba:active {
-	position:relative;
-	top:1px;
-}
-
-        
-  
-}
-
-
-
