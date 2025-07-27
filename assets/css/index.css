@@ -1,0 +1,58 @@
+/* FONTES */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,900;1,900&display=swap");
+
+nav {
+  background-color: black;
+}
+
+body {
+  background-image: url(/assets/img/index/background-pc.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.index-t1 {
+  font-family: "Roboto";
+  font-size: 2.0em;
+}
+
+.navbar-brand img {
+  width: 80px;
+}
+.navbar-nav {
+  align-items: center;
+}
+.navbar .navbar-nav .nav-link {
+  color: #cfcfcf;
+  font-size: 1.4em;
+  padding: 0.5em 1em;
+  font-family: "Roboto";
+}
+
+.navbar .nav-link:hover {
+  color: white !important;
+}
+@media screen and (min-width: 768px) {
+  body {
+    background-image: url(/assets/img/index/background-pc.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+    margin: 0;
+  }
+
+  .index-t1 {
+    font-family: "Roboto";
+    font-size: 2.7em;
+  }
+
+  .navbar-brand img {
+    width: 50px;
+  }
+  .navbar-brand {
+    margin-right: 0;
+    padding: 0 1em;
+  }
+}
