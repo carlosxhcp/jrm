@@ -67,6 +67,29 @@ body {
     margin-right: 0;
     padding: 0 1em;
   }
+
+  .btn-saiba {
+	background-color:#ffd500;
+	border-radius:5px;
+	display:inline-block;
+	cursor:pointer;
+	color:#000000;
+	font-family:'Arial';
+	font-size:27px;
+	padding:13px 73px;
+	text-decoration:none;
+  
+}
+.btn-saiba:hover {
+	background-color:#fff424;
+}
+.btn-saiba:active {
+	position:relative;
+	top:1px;
+}
+
+        
+  
 }
 
 
