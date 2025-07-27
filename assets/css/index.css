@@ -17,12 +17,12 @@ body {
 .index-t1 {
   margin-top: 25px;
   font-family: "Roboto";
-  font-size: 1.1em;
+  font-size: 1.4em;
 }
 
 .index-t2 {
   font-family: "Roboto";
-  font-size: 1.0em;
+  font-size: 1.3em;
   color: rgb(216, 216, 0);
 }
 
@@ -50,7 +50,7 @@ body {
   cursor: pointer;
   color: #000000;
   font-family: "Rubik";
-  font-size: .9em;
+  font-size: 1.1em;
   padding: 8px 30px;
   margin-top: 50px;
   text-decoration: none;
