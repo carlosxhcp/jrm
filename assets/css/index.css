@@ -6,13 +6,6 @@ nav {
   background-color: black;
 }
 
-body {
-  background-image: url(/assets/img/index/background-pc.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  height: 100vh;
-  margin: 0;
-}
 
 .index-t1 {
   margin-top: 25px;
@@ -26,6 +19,16 @@ body {
   color: rgb(216, 216, 0);
 }
 
+.background {
+    background-repeat: no-repeat;
+    background-position: center;
+  background-size: cover;
+  height: 130vh;
+  margin-top: -50px;
+  background: 
+    linear-gradient(to bottom, rgba(0, 0, 0, 0) 70%, rgb(255, 255, 255)),
+    url("/assets/img/index/background-pc.png");
+  }
 .navbar-brand img {
   width: 50px;
 }
@@ -66,13 +69,39 @@ body {
   position: relative;
   top: 1px;
 }
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(70px);
+  transition: all .8s ease-out;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+#r-veicular {
+  height: 100vh;
+  padding-top: 40px;
+}
 @media screen and (min-width: 768px) {
   body {
-    background-image: url(/assets/img/index/background-pc.png);
     background-repeat: no-repeat;
     background-position: center;
     height: 100vh;
     margin: 0;
+  }
+
+  .background {
+    background-repeat: no-repeat;
+    background-position: center;
+  background-size: cover;
+  height: 130vh;
+  margin-top: -50px;
+  background: 
+    linear-gradient(to bottom, rgba(0, 0, 0, 0) 70%, rgb(255, 255, 255)),
+    url("/assets/img/index/background-pc.png");
   }
 
   .index-t1 {
