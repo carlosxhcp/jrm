@@ -2,10 +2,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,900;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
 
-nav {
-  background-color: black;
-}
 
+html {
+  scroll-behavior: smooth;
+}
 
 .index-t1 {
   margin-top: 25px;
@@ -20,30 +20,12 @@ nav {
 }
 
 .background {
-    background-repeat: no-repeat;
-    background-position: center;
+  background-repeat: no-repeat;
+  background-position: center;
   background-size: cover;
   height: 100vh;
   margin-top: -50px;
-  background: 
-    linear-gradient(to bottom, rgba(0, 0, 0, 0) 70%, rgb(255, 255, 255)),
-    url("/assets/img/index/background-pc.png");
-  }
-.navbar-brand img {
-  width: 50px;
-}
-.navbar-nav {
-  align-items: center;
-}
-.navbar .navbar-nav .nav-link {
-  color: #cfcfcf;
-  font-size: 1.4em;
-  padding: 0.5em 1em;
-  font-family: "Roboto";
-}
-
-.navbar .nav-link:hover {
-  color: white !important;
+  background-image: url("/assets/img/index/background-celular.png");
 }
 
 .btn-saiba {
@@ -73,7 +55,7 @@ nav {
 .fade-in {
   opacity: 0;
   transform: translateY(70px);
-  transition: all .8s ease-out;
+  transition: all 0.8s ease-out;
 }
 
 .fade-in.visible {
@@ -82,8 +64,7 @@ nav {
 }
 
 #r-veicular {
-  height: 100vh;
-  padding-top: 40px;
+  height: 200vh;
 }
 
 .rt-t1 {
@@ -91,30 +72,60 @@ nav {
   font-size: 20px;
   margin-left: 15px;
   margin-right: 15px;
-  text-align:justify;
+  text-align: justify;
+}
+
+.card-plan {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 30px 20px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s;
+}
+
+.card-plan:hover {
+  transform: scale(1.03);
+}
+
+.plan-title {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #ffd500;
+}
+
+.price-btn {
+  background: white;
+  color: black;
+  font-weight: bold;
+  padding: 10px 30px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  margin-top: 20px;
+}
+
+.justify-planos {
+  text-align: justify;
+  margin-left: 40px;
 }
 @media screen and (min-width: 768px) {
-  body {
-    background-repeat: no-repeat;
-    background-position: center;
-    height: 100vh;
-    margin: 0;
-  }
 
-  .background {
-    background-repeat: no-repeat;
-    background-position: center;
-  background-size: cover;
-  height: 130vh;
-  margin-top: -50px;
-  background: 
-    linear-gradient(to bottom, rgba(0, 0, 0, 0) 70%, rgb(255, 255, 255)),
+.background {
+  background-image: 
+    linear-gradient(to bottom, rgba(0, 0, 0, 0) 70%, #000000 100%),
     url("/assets/img/index/background-pc.png");
-  }
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+  height: 105vh; 
+}
 
   .index-t1 {
     font-family: "Roboto";
     font-size: 2.6em;
+    margin-top: 100px;
   }
 
   .index-t2 {
@@ -123,13 +134,7 @@ nav {
     color: rgb(255, 230, 0);
   }
 
-  .navbar-brand img {
-    width: 50px;
-  }
-  .navbar-brand {
-    margin-right: 0;
-    padding: 0 1em;
-  }
+  
 
   .btn-saiba {
     background-color: #ffd500;
@@ -153,10 +158,71 @@ nav {
     top: 1px;
   }
   .rt-t1 {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 21px;
-  margin-left: 110px;
-  margin-right: 110px;
-  text-align:justify;
-}
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 21px;
+    margin-left: 110px;
+    margin-right: 110px;
+    text-align: justify;
+  }
+
+  .carousel {
+    margin-top: 100px;
+  }
+
+  .card-plan {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 30px 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s;
+  }
+
+  .card-plan:hover {
+    transform: scale(1.03);
+  }
+
+  .plan-title {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #ffd500;
+  }
+
+  .price-btn {
+    background: white;
+    color: black;
+    font-weight: bold;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    margin-top: 20px;
+  }
+
+  .justify-planos {
+    text-align: justify;
+    margin-left: 40px;
+  }
+
+  icon-img {
+      height: 60px;
+      margin-bottom: 15px;
+    }
+
+    .service-box {
+      padding: 30px 20px;
+      text-align: center;
+      height: 100%;
+    }
+
+    .service-title {
+      font-weight: bold;
+      font-size: 1.4rem;
+      margin-bottom: 10px;
+    }
+
+    .text-justify {
+      text-align: justify;
+    }
 }
